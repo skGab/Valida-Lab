@@ -1,0 +1,30 @@
+{
+  "lang": "pt-BR",
+  "name": "Grupo Polar",
+  "short_name": "Grupo Polar",
+  "categories": ["Logística", "Cuidados de Saúde"],
+  "description": "O Grupo Polar garante qualidade em toda a cadeia fria, com soluções que asseguram a integridade térmica de produtos durante transporte e armazenamento. Com mais de 20 anos de experiência e certificação ISO 9001:2015, oferecemos tecnologia e inovação para aprimorar a logística em todo o Brasil e no mundo. Conte com nossos serviços especializados para garantir a qualidade de seus medicamentos durante todo o ciclo de vida.",
+  "theme_color": "#053565",
+  "background_color": "#fff",
+  "display": "standalone",
+  "scope": "/",
+  "start_url": "/",
+  "prefer_related_applications": false,
+  "icons": [
+    {
+      "src": "/assets/icons/pwa/android-chrome-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/assets/icons/pwa/android-chrome-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "serviceworker": {
+    "src": "/service-worker.js"
+  }
+}
