@@ -1,5 +1,5 @@
 :root {
-  --back-ground: #f7f7f7;
+  --back-ground: #fff;
   --text: #333333;
   --title-h1: #f7f7f7;
   --title-h2: #003365;
@@ -60,10 +60,8 @@ html,
 body {
   font-family: 'Roboto', sans-serif;
   color: var(--text);
-  overflow-x: hidden;
   background-color: var(--back-ground);
-
-  min-height: 300vh;
+  min-height: 100vh;
 
   @media screen and (min-width: 1200px) {
     .container {
@@ -74,12 +72,14 @@ body {
 }
 
 body {
+  overflow-x: hidden;
+
   h1 {
     color: var(--title-h1);
-    background-color: rgba(0, 0, 255, 0.219);
   }
 
   h2 {
+    font-size: 40px;
     color: var(--title-h2);
   }
 
@@ -92,14 +92,180 @@ body {
   }
 
   header {
+    background: none;
+
+    .nav-link {
+      color: #ffffffe8 !important;
+    }
+
+    .nav-link:hover {
+      color: #fff !important;
+    }
+    .nav-link.active {
+      font-weight: normal;
+      color: #fff !important;
+    }
+
+    figure {
+      transition: all 0.4s ease;
+      margin-bottom: 0;
+      margin-top: 3rem;
+
+      img {
+        transition: all 0.4s ease;
+      }
+    }
+
+    #navbarNavAltMarkup {
+      transition: all 0.4s ease;
+      margin-bottom: 3rem;
+      padding-bottom: 3rem;
+    }
   }
 
   main {
+    #banner_hero {
+      min-height: 632px;
+      backdrop-filter: brightness(-500%);
+      background-size: cover;
+      background-position: center;
+
+      h1 {
+        max-width: 594px;
+      }
+
+      p {
+        max-width: 800px;
+      }
+    }
+
+    #carousel_home {
+      .carousel-item {
+        img {
+          max-width: 1600px;
+          min-height: 632px;
+          object-fit: cover;
+        }
+      }
+    }
+
+    #sobre {
+      min-height: 500px;
+    }
+
+    #banner_lab {
+      img {
+        max-width: 1600px;
+        filter: drop-shadow(1px 2px 4px grey);
+      }
+    }
+
+    #expertise {
+      button {
+        background-color: var(--bg-blackbeans);
+        letter-spacing: 1.5px;
+        max-width: 180px;
+      }
+    }
+
+    #banner_estrelas {
+      img {
+        max-width: 1600px;
+        filter: drop-shadow(1px 2px 4px grey);
+      }
+    }
+
+    #conteudo_exclusivo {
+      .card {
+        img {
+          object-fit: cover;
+        }
+
+        a > span {
+          letter-spacing: 1.5px;
+        }
+      }
+    }
+
+    #videos {
+      background-image: url(/assets/imgs/backGrounds/videos_bg.png);
+      background-position: top;
+      background-repeat: no-repeat;
+      background-size: cover;
+      max-width: 1600px;
+
+      min-height: 807px;
+      display: flex;
+      align-items: center;
+
+      figure{
+        img{
+          filter: drop-shadow(1px 2px 4px rgba(0, 0, 0, 0.438));
+        }
+      }
+
+      h2 {
+        margin-bottom: 6rem;
+      }
+
+      a > p {
+        max-width: 300px;
+      }
+    }
+
+    #contato {
+      max-width: 1600px;
+
+      form {
+        label {
+          color: var(--title-h2);
+        }
+
+        input,
+        textarea {
+          border-radius: 0;
+          border: 1px solid var(--title-h2);
+        }
+
+        button {
+          background-color: var(--title-h2);
+          letter-spacing: 1.5px;
+        }
+      }
+
+      img {
+        min-height: 665px;
+      }
+    }
   }
 
   footer {
-    a {
-      color: var(--links-footer);
+    background-color: var(--title-h2);
+    background-image: url(/assets/imgs/backGrounds/bg_footer.webp);
+    background-position: bottom;
+    background-repeat: no-repeat;
+
+    div {
+      p {
+        color: var(--links-footer);
+      }
+
+      nav {
+        a {
+          color: var(--links-footer) !important;
+        }
+        span {
+          color: var(--title-h1);
+        }
+      }
+    }
+
+    #bg_blackbeans {
+      background-color: var(--bg-blackbeans);
+
+      span {
+        font-size: 12px;
+      }
     }
   }
 }

@@ -24,7 +24,7 @@
       "purpose": "any maskable"
     }
   ],
-  // "serviceworker": {
-  //   "src": "/service-worker.js"
-  // }
+  "serviceworker": {
+    "src": "/service-worker.js"
+  }
 }
