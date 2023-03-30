@@ -72,12 +72,11 @@ $current_page =  $_SERVER['REQUEST_URI'];
 
     <!-- MAIN -->
     <main id="main">
-        <?php require __DIR__ . '/banner_content.php';
+        <?php include __DIR__ .  '/bannerContent.php';
 
-        if ($current_page != '/') : ?>
-
-            <!-- BANNER HERO -->
-            <section id="banner_hero" class="d-flex justify-content-center align-items-end" style="background-image: url(<?php echo $banner ?>);">
+        // <!-- BANNER HERO -->
+        if ($current_page != '/index.php' && $current_page != '/') : ?>
+            <section id="banner_hero" class="d-flex justify-content-center align-items-end mx-auto" style="background-image: url(<?php echo $banner ?>);">
                 <div class="container px-4">
                     <div class="row pb-5">
                         <div class="col d-flex align-items-center justify-content-between text-white gap-5">
@@ -88,9 +87,7 @@ $current_page =  $_SERVER['REQUEST_URI'];
                     </div>
                 </div>
             </section>
-
         <?php else : ?>
-
             <!-- CAROUSEL HOME -->
             <section id="carousel_home">
                 <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
@@ -145,5 +142,4 @@ $current_page =  $_SERVER['REQUEST_URI'];
 
                 </div>
             </section>
-
         <?php endif ?>

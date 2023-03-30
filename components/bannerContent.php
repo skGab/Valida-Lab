@@ -1,6 +1,6 @@
 <?php
 
-if ($current_page == "/") {
+if ($current_page == "/index.php" or $current_page == "/") {
     $banner = '';
     $title = "Fornecemos soluções <br> com excelência e qualidade comprovada.";
     $text = "Temos mais de 20 anos de experiência em estudos de qualificação térmica, sendo referência no mercado farmacêutico e diagnóstico.";

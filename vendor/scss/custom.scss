@@ -1,3 +1,5 @@
+@import 'components.scss';
+
 :root {
   --back-ground: #fff;
   --text: #333333;
@@ -124,8 +126,10 @@ body {
   }
 
   main {
+    // PAGINA PRINCIPAL
     #banner_hero {
       min-height: 632px;
+      max-width: 1600px;
       backdrop-filter: brightness(-500%);
       background-size: cover;
       background-position: center;
@@ -149,7 +153,7 @@ body {
       }
     }
 
-    #sobre {
+    #intro {
       min-height: 500px;
     }
 
@@ -188,7 +192,7 @@ body {
     }
 
     #videos {
-      background-image: url(/assets/imgs/backGrounds/videos_bg.png);
+      background-image: url(/assets/imgs/backGrounds/videos_bg.webp);
       background-position: top;
       background-repeat: no-repeat;
       background-size: cover;
@@ -198,8 +202,8 @@ body {
       display: flex;
       align-items: center;
 
-      figure{
-        img{
+      figure {
+        img {
           filter: drop-shadow(1px 2px 4px rgba(0, 0, 0, 0.438));
         }
       }
@@ -235,6 +239,56 @@ body {
 
       img {
         min-height: 665px;
+      }
+    }
+
+    // PAGINA - ESPECIALISTAS
+    #banner_luva {
+      max-width: 1600px;
+    }
+
+    #especialistas {
+      .row {
+        gap: 4rem 0;
+      }
+
+      .card {
+        color: var(--title-h2);
+
+        img {
+          filter: drop-shadow(1px 2px 4px gray);
+        }
+
+        h5 {
+          letter-spacing: 1.5px;
+        }
+      }
+    }
+
+    // PAGINA CURSOS E EVENTOS
+    // #eventos_cursos {
+    // }
+
+    // COMPONENTS
+    .list-group {
+      border-radius: 0;
+
+      .list-group-item {
+        border-left: 0;
+        color: var(--title-h2);
+      }
+
+      .list-group-item.active {
+        background-color: #e9effd;
+        border-color: #e9effd;
+      }
+
+      .list-group-item:first-child {
+        border-top: 0;
+      }
+
+      .list-group-item:last-child {
+        border-bottom: 0;
       }
     }
   }
