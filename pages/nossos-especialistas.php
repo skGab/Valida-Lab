@@ -1,4 +1,6 @@
-<?php require('../components/header.php') ?>
+<?php
+$root = $_SERVER['DOCUMENT_ROOT'];
+require $root . '/components/header.php' ?>
 
 <!-- INTRO -->
 <?php include '../components/intro.php' ?>
@@ -148,4 +150,4 @@
     </div>
 </section>
 
-<?php require('../components/footer.php') ?>
+<?php require $root . '/components/footer.php' ?>

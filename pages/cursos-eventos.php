@@ -1,6 +1,8 @@
 <?php
-require '../components/header.php';
-include '../components/card.php'
+$root = $_SERVER['DOCUMENT_ROOT'];
+require $root . '/components/header.php';
+include $root . '/components/card.php';
+include $root . '/components/events_bg.php'
 ?>
 
 <section id="eventos_cursos" class="py-5 my-5">
@@ -41,4 +43,4 @@ include '../components/card.php'
     </div>
 </section>
 
-<?php require '../components/footer.php'  ?>
+<?php require $root . '/components/footer.php'  ?>

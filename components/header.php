@@ -4,6 +4,7 @@ $title;
 $text;
 
 $current_page =  $_SERVER['REQUEST_URI'];
+$root = $_SERVER['DOCUMENT_ROOT']
 ?>
 
 <!DOCTYPE html>
@@ -72,7 +73,7 @@ $current_page =  $_SERVER['REQUEST_URI'];
 
     <!-- MAIN -->
     <main id="main">
-        <?php include __DIR__ .  '/bannerContent.php';
+        <?php include $root . '/data/banner_content.php';
 
         // <!-- BANNER HERO -->
         if ($current_page != '/index.php' && $current_page != '/') : ?>
