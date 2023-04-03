@@ -15,7 +15,7 @@ require $root . '/components/header.php' ?>
     <div class="container py-5 px-4">
         <div class="row align-items-center">
             <!-- Liana Montemor -->
-            <div class="col-3">
+            <div class="col-12 col-sm-6 col-md-4 col-xl-3">
                 <div class="card text-center border-0">
                     <figure class="text-center">
                         <img loading="lazy" src="/assets/imgs/profile/thumb_liana.webp" class="img-fluid" alt="Liana Montemor">
@@ -27,7 +27,7 @@ require $root . '/components/header.php' ?>
                 </div>
             </div>
             <!-- Ana Fonseca -->
-            <div class="col-3">
+            <div class="col-12 col-sm-6 col-md-4 col-xl-3">
                 <div class="card text-center border-0">
                     <figure class="text-center">
                         <img loading="lazy" src="/assets/imgs/profile/thumb_ana.webp" class="img-fluid" alt="Ana Fonseca">
@@ -39,7 +39,7 @@ require $root . '/components/header.php' ?>
                 </div>
             </div>
             <!-- Caio Henrique Rodrigues -->
-            <div class="col-3">
+            <div class="col-12 col-sm-6 col-md-4 col-xl-3">
                 <div class="card text-center border-0">
                     <figure class="text-center">
                         <img loading="lazy" src="/assets/imgs/profile/thumb_caio.webp" class="img-fluid" alt="Caio Henrique Rodrigues">
@@ -51,7 +51,7 @@ require $root . '/components/header.php' ?>
                 </div>
             </div>
             <!-- Camila Vasconcelos -->
-            <div class="col-3">
+            <div class="col-12 col-sm-6 col-md-4 col-xl-3">
                 <div class="card text-center border-0">
                     <figure class="text-center">
                         <img loading="lazy" src="/assets/imgs/profile/thumb_camila.webp" class="img-fluid" alt="Camila Vasconcelos">
@@ -63,7 +63,7 @@ require $root . '/components/header.php' ?>
                 </div>
             </div>
             <!-- Eduardo Nishimoto -->
-            <div class="col-3">
+            <div class="col-12 col-sm-6 col-md-4 col-xl-3">
                 <div class="card text-center border-0">
                     <figure class="text-center">
                         <img loading="lazy" src="/assets/imgs/profile/thumb_eduardo.webp" class="img-fluid" alt="Eduardo Nishimoto">
@@ -75,7 +75,7 @@ require $root . '/components/header.php' ?>
                 </div>
             </div>
             <!-- Gabriela Betini -->
-            <div class="col-3">
+            <div class="col-12 col-sm-6 col-md-4 col-xl-3">
                 <div class="card text-center border-0">
                     <figure class="text-center">
                         <img loading="lazy" src="/assets/imgs/profile/thumb_gabriela.webp" class="img-fluid" alt="Gabriela Betini">
@@ -87,7 +87,7 @@ require $root . '/components/header.php' ?>
                 </div>
             </div>
             <!-- Guilherme Forato -->
-            <div class="col-3">
+            <div class="col-12 col-sm-6 col-md-4 col-xl-3">
                 <div class="card text-center border-0">
                     <figure class="text-center">
                         <img loading="lazy" src="/assets/imgs/profile/thumb_guilherme.webp" class="img-fluid" alt="Guilherme Forato">
@@ -99,7 +99,7 @@ require $root . '/components/header.php' ?>
                 </div>
             </div>
             <!-- Luiz Carlos dos Reis -->
-            <div class="col-3">
+            <div class="col-12 col-sm-6 col-md-4 col-xl-3">
                 <div class="card text-center border-0">
                     <figure class="text-center">
                         <img loading="lazy" src="/assets/imgs/profile/thumb_luiz.webp" class="img-fluid" alt="Luiz Carlos dos Reis">
@@ -111,7 +111,7 @@ require $root . '/components/header.php' ?>
                 </div>
             </div>
             <!-- Nathalia Lima -->
-            <div class="col-3">
+            <div class="col-12 col-sm-6 col-md-4 col-xl-3">
                 <div class="card text-center border-0">
                     <figure class="text-center">
                         <img loading="lazy" src="/assets/imgs/profile/thumb_nathalia.webp" class="img-fluid" alt="Nathalia Lima">
@@ -123,7 +123,7 @@ require $root . '/components/header.php' ?>
                 </div>
             </div>
             <!-- Priscila Canassa -->
-            <div class="col-3">
+            <div class="col-12 col-sm-6 col-md-4 col-xl-3">
                 <div class="card text-center border-0">
                     <figure class="text-center">
                         <img loading="lazy" src="/assets/imgs/profile/thumb_priscila.webp" class="img-fluid" alt="Priscila Canassa">
@@ -135,7 +135,7 @@ require $root . '/components/header.php' ?>
                 </div>
             </div>
             <!-- Willian Cruz -->
-            <div class="col-3">
+            <div class="col-12 col-sm-6 col-md-4 col-xl-3">
                 <div class="card text-center border-0">
                     <figure class="text-center">
                         <img loading="lazy" src="/assets/imgs/profile/thumb_willian.webp" class="img-fluid" alt="Willian Cruz">

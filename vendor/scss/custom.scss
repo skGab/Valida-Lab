@@ -94,6 +94,7 @@ body {
   }
 
   header {
+    z-index: 1;
     background: none;
 
     .nav-link {
@@ -111,7 +112,10 @@ body {
     figure {
       transition: all 0.4s ease;
       margin-bottom: 0;
-      margin-top: 3rem;
+
+      @media screen and (min-width: 992px) {
+        margin-top: 3rem;
+      }
 
       img {
         transition: all 0.4s ease;
@@ -126,6 +130,7 @@ body {
   }
 
   main {
+    min-height: 100vh;
     // PAGINA PRINCIPAL
     #banner_hero {
       min-height: 632px;
@@ -147,8 +152,8 @@ body {
       .carousel-item {
         img {
           max-width: 1600px;
-          min-height: 632px;
           object-fit: cover;
+          min-height: 632px;
         }
       }
     }
@@ -160,6 +165,7 @@ body {
     #banner_lab {
       img {
         max-width: 1600px;
+        max-height: 625px;
         filter: drop-shadow(1px 2px 4px grey);
       }
     }
@@ -175,14 +181,29 @@ body {
     #banner_estrelas {
       img {
         max-width: 1600px;
+        max-height: 546px;
         filter: drop-shadow(1px 2px 4px grey);
       }
     }
 
     #conteudo_exclusivo {
+      .row:nth-child(2) {
+        gap: 5rem 0;
+      }
+
+      @media screen and (min-width: 1200px) {
+        .row:nth-child(2) {
+          gap: 3rem;
+        }
+      }
+
       .card {
-        img {
+        margin: 0 auto;
+        max-width: 366px;
+
+        img:first-child {
           object-fit: cover;
+          box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.329);
         }
 
         a > span {
@@ -219,6 +240,11 @@ body {
 
     #contato {
       max-width: 1600px;
+
+      .row {
+        max-width: 1600px;
+        margin: 0 auto;
+      }
 
       form {
         label {
@@ -266,29 +292,42 @@ body {
     }
 
     // PAGINA CURSOS E EVENTOS
-    // #eventos_cursos {
-    // }
+    #eventos_cursos {
+      min-height: 1000px;
 
-    // COMPONENTS
-    .list-group {
-      border-radius: 0;
-
-      .list-group-item {
-        border-left: 0;
-        color: var(--title-h2);
+      .hidden {
+        display: none;
       }
+    }
 
-      .list-group-item.active {
-        background-color: #e9effd;
-        border-color: #e9effd;
-      }
+    // PAGINA NOSSO EXPERTISE
+    #eventos > div {
+      gap: 2rem 0;
+    }
+    #eventos {
+      figure {
+        #bg {
+          min-height: 213px;
+          object-fit: cover;
+          border-radius: 20px;
+        }
 
-      .list-group-item:first-child {
-        border-top: 0;
-      }
+        p {
+          color: var(--back-ground);
+          font-size: 14px;
+        }
 
-      .list-group-item:last-child {
-        border-bottom: 0;
+        button {
+          background-color: #fff;
+          border: none;
+          font-size: 1rem;
+          text-transform: uppercase;
+          color: var(--title-h2);
+          letter-spacing: 1.5px;
+          padding: 0.5rem 0.8rem;
+          width: fit-content;
+          box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.411);
+        }
       }
     }
   }

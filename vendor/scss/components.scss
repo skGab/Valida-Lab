@@ -1,20 +1,19 @@
 // CARD
 .cardComponent {
-  max-width: 285px;
+  // max-width: 260px;
   border-radius: 12px;
-  min-height: 300px;
   background-color: #0e4aee17;
 
   h5 {
     color: var(--title-h2);
   }
 
-  a {
+  button {
     position: relative;
     letter-spacing: 1.5px;
   }
 
-  a:after {
+  button:after {
     content: '';
     position: absolute;
     display: block;
@@ -22,5 +21,44 @@
     width: 100%;
     height: 1px;
     background-color: black;
+  }
+}
+
+// SELECTOR
+.list-group {
+  border-radius: 0;
+
+  .list-group-item {
+    border-left: 0;
+    color: var(--title-h2);
+  }
+
+  .list-group-item.active {
+    background-color: #e9effd;
+    border-color: #e9effd;
+  }
+
+  .list-group-item:first-child {
+    border-top: 0;
+  }
+
+  .list-group-item:last-child {
+    border-bottom: 0;
+  }
+}
+
+// MODAL
+.modal-dialog {
+  min-width: 648px;
+  max-width: 815px;
+
+  .modal-content {
+    border-radius: 50px 50px 30px 30px;
+    min-height: 403px;
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.315);
+
+    .modal-body {
+      color: var(--bg-blackbeans);
+    }
   }
 }
