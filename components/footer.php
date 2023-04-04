@@ -57,8 +57,10 @@
         <div class="row py-5">
             <div class="col d-flex flex-column flex-md-row  align-items-center justify-content-between">
                 <figure class="mb-5 mb-md-0 text-center">
-                    <img loading="lazy" src="/assets/imgs/logos/logo_grupo-polar.svg" alt="Logo Grupo Polar" width="128px" class="img-fluid mb-2">
-                    <p class="mb-0">Uma empresa do Grupo Polar</p>
+                    <a href="https://grupopolar.com.br/" target="_blank">
+                        <img loading="lazy" src="/assets/imgs/logos/logo_grupo-polar.svg" alt="Logo Grupo Polar" width="128px" class="img-fluid mb-2">
+                        <p class="mb-0">Uma empresa do Grupo Polar</p>
+                    </a>
                 </figure>
 
                 <div class="d-flex flex-column flex-md-row align-items-center">
@@ -67,10 +69,10 @@
                     </figure>
 
                     <nav class="d-flex flex-column align-items-md-start align-items-center">
-                        <a href="" class="lh-">Home</a>
-                        <a href="" class="lh-lg">Sobre nós</a>
-                        <a href="" class="lh-lg">Nosso Expertise</a>
-                        <a href="" class="mb-2 lh-lg">Contato</a>
+                        <a href="/" class="lh-">Home</a>
+                        <a href="/#intro" class="lh-lg">Sobre nós</a>
+                        <a href="/pages/nosso-expertise.php" class="lh-lg">Nosso Expertise</a>
+                        <a href="#contato" class="mb-2 lh-lg">Contato</a>
 
                         <a href="" class="lh-lg">
                             <img loading="lazy" src="/assets/icons/instagram_icon.svg" width="19px" class="me-3 img-fluid" alt="Icone Instagram"><span>@laboratoriovalida</span>

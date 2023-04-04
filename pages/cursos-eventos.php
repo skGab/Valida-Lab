@@ -8,10 +8,10 @@ include $root . '/components/selector.php'
 
 <!-- EVENTOS && CURSOS -->
 <section id="eventos_cursos" class="py-5 my-5">
-    <div class="container px-4 py-5">
+    <div class="container px-4 py-lg-5">
         <div class="row gap-4">
             <!-- SELETOR -->
-            <div id="seletor_evento" class="col-3">
+            <div id="seletor_evento" class="col-12 col-lg-3 mb-lg-0 mb-4">
                 <?php selector([
                     'Feiras e Workshops',
                     'Conteúdo Digital',
@@ -24,11 +24,11 @@ include $root . '/components/selector.php'
             </div>
 
             <!-- BG && EVENTOS -->
-            <div id="eventos" class="col-8 flex-fill">
+            <div id="eventos" class="col-12 col-lg-8 flex-fill">
                 <?php events_bg('/assets/imgs/backGrounds/bg_feiras.webp', 'Feiras e Workshops') ?>
 
-                <div id="feiras" class="row hidden">
-                    <div class="col-4">
+                <div id="feiras" class="row hidden justify-content-center justify-content-lg-start">
+                    <div class="col-11 col-md-6 col-xl-4">
                         <?php
                         card(
                             '/assets/icons/card-icons/fce_icon.svg',
@@ -41,8 +41,8 @@ include $root . '/components/selector.php'
                     </div>
                 </div>
 
-                <div id="conteudo_digital" class="row hidden">
-                    <div class="col-4">
+                <div id="conteudo_digital" class="row hidden justify-content-center justify-content-lg-start">
+                    <div class="col-11 col-md-6 col-xl-4">
                         <?php
                         card(
                             '/assets/icons/card-icons/live_icon.svg',
@@ -55,8 +55,8 @@ include $root . '/components/selector.php'
                     </div>
                 </div>
 
-                <div id="cursos" class="row hidden">
-                    <div class="col-4">
+                <div id="cursos" class="row hidden justify-content-center justify-content-lg-start">
+                    <div class="col-11 col-md-6 col-xl-4">
                         <?php
                         card(
                             '/assets/icons/card-icons/quantum_icon.png',

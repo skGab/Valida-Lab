@@ -11,7 +11,7 @@ require $root . '/components/header.php' ?>
         <div class="row justify-content-center">
             <?php include $root . '/components/card.php'; ?>
 
-            <div class="col-12 col-sm-8 col-md-6 col-lg-4 col-xl-3 mb-5 mb-md-0">
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3 mb-5 mb-md-0">
                 <?php card(
                     '',
                     'ANVISA',
@@ -21,7 +21,7 @@ require $root . '/components/header.php' ?>
                 ); ?>
             </div>
 
-            <div class="col-12 col-sm-8 col-md-6 col-lg-4 col-xl-3">
+            <div class="col-12 col-md-6 col-lg-4 col-xl-3">
                 <?php card(
                     '',
                     'RDC 430',

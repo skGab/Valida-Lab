@@ -10,7 +10,7 @@
                 <img loading="lazy" src="/assets/icons/close_icon.svg" type="button" class="position-absolute top-0 end-0 m-4 img-fluid" data-bs-dismiss="modal" alt="Close Button">
             </figure>
 
-            <div class="modal-body p-5"></div>
+            <div class="modal-body p-4 p-sm-5"></div>
         </div>
     </div>
-</div>
+</div> 

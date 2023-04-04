@@ -9,10 +9,10 @@ include $root . '/components/modal.php'
 
 <!-- EVENTOS && CURSOS -->
 <section id="eventos_cursos" class="py-5 my-5">
-    <div class="container px-4 py-5">
+    <div class="container px-4 py-md-5">
         <div class="row gap-4">
             <!-- SELETOR -->
-            <div id="seletor_evento" class="col-3">
+            <div id="seletor_evento" class="col-lg-3 mb-4 mb-lg-0">
                 <?php selector([
                     'Mapeamento Térmico',
                     'Qualificação Térmica',
@@ -23,11 +23,11 @@ include $root . '/components/modal.php'
             </div>
 
             <!-- BG && EVENTOS -->
-            <div id="eventos" class="col-8 flex-fill">
+            <div id="eventos" class="col-lg-8 flex-fill">
                 <?php events_bg('/assets/imgs/backGrounds/bg_mapa-termico.webp', 'Mapeamento Térmico') ?>
 
-                <div id="mapeamento" class="row hidden">
-                    <div class="col-4">
+                <div id="mapeamento" class="row hidden justify-content-center justify-content-md-start">
+                    <div class="col-11 col-md-6 col-xl-4">
                         <?php card(
                             '/assets/icons/card-icons/plane_icon.svg',
                             'Mapeamento Térmico de Rotas',
@@ -36,7 +36,7 @@ include $root . '/components/modal.php'
                             'SAIBA MAIS',
                         ); ?>
                     </div>
-                    <div class="col-4">
+                    <div class="col-11 col-md-6 col-xl-4">
                         <?php card(
                             '/assets/icons/card-icons/armazens_icon.svg',
                             'Mapeamento Térmico
@@ -46,7 +46,7 @@ include $root . '/components/modal.php'
                             'SAIBA MAIS',
                         ); ?>
                     </div>
-                    <div class="col-4">
+                    <div class="col-11 col-md-6 col-xl-4">
                         <?php card(
                             '/assets/icons/card-icons/truck_icon_cold.svg',
                             'Qualificação Térmica de Veículos',
@@ -57,8 +57,8 @@ include $root . '/components/modal.php'
                     </div>
                 </div>
 
-                <div id="qualificacao" class="row hidden">
-                    <div class="col-4">
+                <div id="qualificacao" class="row hidden justify-content-center justify-content-md-start">
+                    <div class="col-11 col-md-6 col-xl-4">
                         <?php card(
                             '/assets/icons/card-icons/embalagens_icon.svg',
                             'Embalagens',
@@ -67,7 +67,7 @@ include $root . '/components/modal.php'
                             'SAIBA MAIS',
                         ); ?>
                     </div>
-                    <div class="col-4">
+                    <div class="col-11 col-md-6 col-xl-4">
                         <?php card(
                             '/assets/icons/card-icons/armazens_icon.svg',
                             'Armazéns e salas climatizadas',
@@ -76,7 +76,7 @@ include $root . '/components/modal.php'
                             'SAIBA MAIS',
                         ); ?>
                     </div>
-                    <div class="col-4">
+                    <div class="col-11 col-md-6 col-xl-4">
                         <?php card(
                             '/assets/icons/card-icons/congeladoras_icon.svg',
                             'Câmaras frias e congeladoras',
@@ -85,7 +85,7 @@ include $root . '/components/modal.php'
                             'SAIBA MAIS',
                         ); ?>
                     </div>
-                    <div class="col-4">
+                    <div class="col-11 col-md-6 col-xl-4">
                         <?php card(
                             '/assets/icons/card-icons/aquecimento_icon.svg',
                             'Equipamentos de refrigeração e aquecimento',
@@ -94,7 +94,7 @@ include $root . '/components/modal.php'
                             'SAIBA MAIS',
                         ); ?>
                     </div>
-                    <div class="col-4">
+                    <div class="col-11 col-md-6 col-xl-4">
                         <?php card(
                             '/assets/icons/card-icons/truck_icon_cold.svg',
                             'Veículos e containers',
@@ -103,7 +103,7 @@ include $root . '/components/modal.php'
                             'SAIBA MAIS',
                         ); ?>
                     </div>
-                    <div class="col-4">
+                    <div class="col-11 col-md-6 col-xl-4">
                         <?php card(
                             '/assets/icons/card-icons/autoclaves_icon.png',
                             'Estufas e Autoclaves',
@@ -112,7 +112,7 @@ include $root . '/components/modal.php'
                             'SAIBA MAIS',
                         ); ?>
                     </div>
-                    <div class="col-4">
+                    <div class="col-11 col-md-6 col-xl-4">
                         <?php card(
                             '/assets/icons/card-icons/banho-maria_icon.svg',
                             'Banho Maria',
@@ -121,7 +121,7 @@ include $root . '/components/modal.php'
                             'SAIBA MAIS',
                         ); ?>
                     </div>
-                    <div class="col-4">
+                    <div class="col-11 col-md-6 col-xl-4">
                         <?php card(
                             '/assets/icons/card-icons/incubadora_icon.svg',
                             'Incubadoras',
@@ -130,7 +130,7 @@ include $root . '/components/modal.php'
                             'SAIBA MAIS',
                         ); ?>
                     </div>
-                    <div class="col-4">
+                    <div class="col-11 col-md-6 col-xl-4">
                         <?php card(
                             '/assets/icons/card-icons/desinfectora_icon.svg',
                             'Lavadoras e Termo-Desinfectora',
@@ -139,7 +139,7 @@ include $root . '/components/modal.php'
                             'SAIBA MAIS',
                         ); ?>
                     </div>
-                    <div class="col-4">
+                    <div class="col-11 col-md-6 col-xl-4">
                         <?php card(
                             '/assets/icons/card-icons/tuneis_icon.svg',
                             'Túneis de Despirogenização',
@@ -150,8 +150,8 @@ include $root . '/components/modal.php'
                     </div>
                 </div>
 
-                <div id="validacao" class="row hidden">
-                    <div class="col-4">
+                <div id="validacao" class="row hidden justify-content-center justify-content-md-start">
+                    <div class="col-11 col-md-6 col-xl-4">
                         <?php card(
                             '/assets/icons/card-icons/sistemas_Icon.svg',
                             'Sistemas Computadorizados',
@@ -162,9 +162,9 @@ include $root . '/components/modal.php'
                     </div>
                 </div>
 
-                <div id="documentacao" class="row hidden"></div>
+                <div id="documentacao" class="row hidden justify-content-center justify-content-md-start"></div>
 
-                <div id="consultoria" class="row hidden"></div>
+                <div id="consultoria" class="row hidden justify-content-center justify-content-md-start"></div>
             </div>
         </div>
     </div>
