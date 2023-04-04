@@ -46,7 +46,7 @@
 </section>
 
 <button id="scroll-to-top" class="border-0 bg-transparent position-fixed bottom-0 end-0 mb-3 me-3" type="button">
-    <img src="/assets/icons/to_top.png" width="45px" class="img-fluid" alt="Voltar para o topo">
+    <img loading="lazy" src="/assets/icons/to_top.png" width="45px" class="img-fluid" alt="Voltar para o topo">
 </button>
 
 </main>
@@ -100,11 +100,11 @@
 <script defer src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 
 <!-- SERVICE WORKER -->
-<!-- <script defer type="application/javascript">
+<script defer type="application/javascript">
     if ('serviceWorker' in navigator) {
         navigator.serviceWorker.register('/service-worker.js');
     }
-</script> -->
+</script>
 
 <!-- CUSTOM JS -->
 <script defer type="text/javascript" src="/vendor/js/custom.js"></script>

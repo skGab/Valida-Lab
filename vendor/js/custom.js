@@ -1,8 +1,3 @@
-// <!-- SERVICE WORKER -->
-// if ('serviceWorker' in navigator) {
-//   navigator.serviceWorker.register('/service-worker.js');
-// }
-
 // FUNÇÃO PARA ALTERAR O ESTADO DOS ELEMENTOS
 function setVisibility(element, visible) {
   element.classList.toggle('hidden', !visible);
