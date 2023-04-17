@@ -3,6 +3,134 @@ function setVisibility(element, visible) {
   element.classList.toggle('hidden', !visible);
 }
 
+// search-input.js
+function initSearchInput() {
+  const searchLink = document.getElementById('search');
+  const inputBox = document.createElement('input');
+  inputBox.placeholder = 'busca rápida';
+  inputBox.type = 'text';
+  inputBox.style.position = 'absolute';
+  inputBox.style.right = '0';
+  inputBox.style.top = '50px';
+  inputBox.style.width = '0';
+  inputBox.style.opacity = '0';
+  inputBox.style.overflow = 'hidden';
+  inputBox.style.transition = 'width 0.3s ease, opacity 0.3s ease';
+  searchLink.appendChild(inputBox);
+
+  inputBox.addEventListener('click', (event) => {
+    event.stopPropagation();
+  });
+
+  searchLink.addEventListener('click', (event) => {
+    event.preventDefault();
+    inputBox.style.width = inputBox.style.width === '0px' ? '190px' : '0px';
+    inputBox.style.opacity = inputBox.style.opacity === '0' ? '1' : '0';
+    inputBox.classList.remove('valid-search');
+    inputBox.focus();
+  });
+
+  const pagesData = [
+    { title: 'Home', url: '/', keywords: ['home', 'inicio'] },
+    {
+      title: 'Sobre nós',
+      url: '/#intro',
+      keywords: ['sobre nos', 'empresa', 'informações', 'sobre'],
+    },
+    {
+      title: 'Nosso Expertise',
+      url: '/pages/nosso-expertise.php',
+      keywords: ['nosso expertise', 'serviços', 'especialidades'],
+    },
+    {
+      title: 'Nossos Especialistas',
+      url: '/pages/nossos-especialistas.php',
+      keywords: ['nossos especialistas', 'profissionais', 'equipe'],
+    },
+    {
+      title: 'Cursos & Eventos',
+      url: '/pages/cursos-eventos.php',
+      keywords: ['cursos', 'eventos', 'capacitação', 'workshops', 'palestras'],
+    },
+    {
+      title: 'Normas',
+      url: '/pages/normas.php',
+      keywords: ['normas', 'regulamentos', 'padrões', 'regras'],
+    },
+    {
+      title: 'Contato',
+      url: '#contato',
+      keywords: ['contato', 'fale conosco', 'atendimento', 'suporte'],
+    },
+  ];
+
+  const removeAccents = (str) => {
+    const accents = 'ÀÁÂÃÄÅàáâãäåÒÓÔÕÖØòóôõöøÈÉÊËèéêëÇçìíîïÌÍÎÏÙÚÛÜùúûüÿÑñ';
+    const accentsOut = 'AAAAAAaaaaaaOOOOOOooooooEEEEeeeeCciiiiIIIIUUUUuuuuyNn';
+    return str
+      .split('')
+      .map((char) => accentsOut[accents.indexOf(char)] || char)
+      .join('');
+  };
+
+  const filterPages = (searchQuery) => {
+    searchQuery = removeAccents(searchQuery.toLowerCase());
+    return pagesData.filter((page) => {
+      return page.keywords.some((keyword) => {
+        const keywordRegex = new RegExp(
+          `\\b${removeAccents(keyword.toLowerCase())}\\b`
+        );
+        return searchQuery.match(keywordRegex);
+      });
+    });
+  };
+
+  function debounce(func, wait) {
+    let timeout;
+    return function (...args) {
+      const context = this;
+      clearTimeout(timeout);
+      timeout = setTimeout(() => func.apply(context, args), wait);
+    };
+  }
+
+  function displaySearchResults(searchResults) {
+    if (searchResults.length > 0) {
+      inputBox.classList.remove('valid-search-red');
+      inputBox.classList.add('valid-search-green');
+      inputBox.placeholder = 'busca rápida';
+    } else {
+      inputBox.classList.remove('valid-search-green');
+      inputBox.classList.add('valid-search-red');
+      inputBox.placeholder = 'página não encontrada';
+    }
+  }
+
+  const debouncedDisplaySearchResults = debounce(function () {
+    const searchQuery = inputBox.value.trim();
+    if (searchQuery.length > 0) {
+      const searchResults = filterPages(searchQuery);
+      displaySearchResults(searchResults);
+    }
+  }, 500);
+
+  inputBox.addEventListener('input', debouncedDisplaySearchResults);
+
+  inputBox.addEventListener('keydown', function (event) {
+    if (event.key === 'Enter') {
+      event.preventDefault();
+      const searchQuery = inputBox.value.trim();
+      if (searchQuery.length > 0) {
+        const searchResults = filterPages(searchQuery);
+        if (searchResults.length > 0) {
+          const page = searchResults[0];
+          window.location.href = page.url;
+        }
+      }
+    }
+  });
+}
+
 // VOLTAR PARA CIMA
 function initToTopButton() {
   const button = document.getElementById('scroll-to-top');
@@ -429,5 +557,7 @@ if (
 ) {
   initContentSelector();
 }
+
+initSearchInput();
 
 initToTopButton();

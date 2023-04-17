@@ -14,7 +14,7 @@ $root = $_SERVER['DOCUMENT_ROOT']
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Valida Lab</title>
+    <title>Valida Lab</title>
     <meta name="description" content="O Grupo Polar garante qualidade em toda a cadeia fria, com soluções que asseguram a integridade térmica de produtos durante transporte e armazenamento. Com mais de 20 anos de experiência e certificação ISO 9001:2015, oferecemos tecnologia e inovação para aprimorar a logística em todo o Brasil e no mundo. Conte com nossos serviços especializados para garantir a qualidade de seus medicamentos durante todo o ciclo de vida.">
 
     <!-- TIPOGRAFIA -->
@@ -55,7 +55,7 @@ $root = $_SERVER['DOCUMENT_ROOT']
                 </button>
 
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-                    <div class="navbar-nav fw-light text-end">
+                    <div class="navbar-nav fw-light align-items-lg-center text-end text-lg-center text-xxl-end">
                         <a class="nav-link <?php echo ($current_page == '/') ? 'active' : '' ?>" href="/">Home</a>
                         <a class="nav-link" href="/#intro">Sobre nós</a>
                         <a class="nav-link <?php echo ($current_page == '/pages/nosso-expertise.php') ? 'active' : '' ?>" href="/pages/nosso-expertise.php">Nosso Expertise</a>
@@ -63,7 +63,7 @@ $root = $_SERVER['DOCUMENT_ROOT']
                         <a class="nav-link <?php echo ($current_page == '/pages/cursos-eventos.php') ? 'active' : '' ?>" href="/pages/cursos-eventos.php">Cursos & Eventos</a>
                         <a class="nav-link <?php echo ($current_page == '/pages/normas.php') ? 'active' : '' ?>" href="/pages/normas.php">Normas</a>
                         <a class="nav-link" href="#contato">Contato</a>
-                        <a class="nav-link" href="#">
+                        <a id="search" class="nav-link position-relative">
                             <img src="/assets/icons/search_icon.svg" width="17px" alt="Icone de busca" class="img-fluid">
                         </a>
                     </div>

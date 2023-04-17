@@ -22,9 +22,7 @@ require $root . '/components/header.php';
             </div>
             <div class="col-12 col-lg-7">
                 <p class="mb-5 mb-lg-4">Equipe técnica altamente qualificada formada por farmacêuticos, químicos e engenheiros inseridos nos principais grupos globais de discussão sobre cadeia do frio e ensaios térmicos. Todo o nosso know-how nos permite oferecer estratégias de acordo com as necessidades, objetivos e processos específicos de cada cliente.</p>
-                <button class="btn btn-dark w-100 ">
-                    <a href="/pages/nosso-expertise.php" class="text-white fw-light">SAIBA MAIS</a>
-                </button>
+                <a href="/pages/nosso-expertise.php" class="text-white fw-light btn btn-dark w-100">SAIBA MAIS</a>
             </div>
         </div>
     </div>
@@ -53,9 +51,9 @@ require $root . '/components/header.php';
 
         <div class="row justify-content-between justify-content-xl-end">
             <div class="col-12 col-sm-6 col-xl-5">
-                <div class="card border-0 flex-xl-row gap-3">
-                    <img loading="lazy" src="/assets/imgs/thumbs/thumb-card-1.webp" class="align-self-center mb-4 mb-xl-0" width="119px" height="119px" alt="Post Thumb">
-                    <div class="card-body py-0">
+                <div class="card border-0 flex-xl-row gap-3 h-100">
+                    <img loading="lazy" src="/assets/imgs/thumbs/thumb-card-1.webp" class="align-self-start mb-4 mb-xl-0" width="119px" height="119px" alt="Post Thumb">
+                    <div class="card-body py-0 d-flex justify-content-between align-items-start flex-column">
                         <h3 class="card-title h6">Termômetro infravermelho - Por que não usar?</h3>
                         <p class="card-text small">Recentemente, a nossa Diretoria Técnica e Estratégica em Cold Chain, Liana Montemor nos ajudou...</p>
                         <a href="#" class="btn fw-bold p-0" target="_blank"><span class="me-2 small">SAIBA MAIS</span> <img loading="lazy" src="/assets/icons/arrow_right.svg" class="img-fluid" alt="Seta Saiba mais"></a>
@@ -63,9 +61,9 @@ require $root . '/components/header.php';
                 </div>
             </div>
             <div class="col-12 col-sm-6 col-xl-5">
-                <div class="card border-0 flex-xl-row gap-3">
-                    <img loading="lazy" src="/assets/imgs/thumbs/thumb-card-2.webp" class="align-self-center mb-4 mb-xl-0" width="119px" height="119px" alt="Post Thumb">
-                    <div class="card-body py-0">
+                <div class="card border-0 flex-xl-row gap-3 h-100">
+                    <img loading="lazy" src="/assets/imgs/thumbs/thumb-card-2.webp" class="align-self-start mb-4 mb-xl-0" width="119px" height="119px" alt="Post Thumb">
+                    <div class="card-body py-0 d-flex justify-content-between align-items-start flex-column">
                         <h3 class="card-title h6">A importância da cadeia do frio para a imunização!</h3>
                         <p class="card-text small">Com a espera da vacinação no Brasil, diversos ambientes hospitalares e farmacêuticos, lidam diariamente...</p>
                         <a href="#" class="btn fw-bold p-0" target="_blank"><span class="me-2 small">SAIBA MAIS</span> <img loading="lazy" src="/assets/icons/arrow_right.svg" class="img-fluid" alt="Seta Saiba mais"></a>
@@ -73,9 +71,9 @@ require $root . '/components/header.php';
                 </div>
             </div>
             <div class="col-12 col-sm-6 col-xl-5">
-                <div class="card border-0 flex-xl-row gap-3">
-                    <img loading="lazy" src="/assets/imgs/thumbs/thumb-card-3.webp" class="align-self-center mb-4 mb-xl-0" width="119px" height="119px" alt="Post Thumb">
-                    <div class="card-body py-0">
+                <div class="card border-0 flex-xl-row gap-3 h-100">
+                    <img loading="lazy" src="/assets/imgs/thumbs/thumb-card-3.webp" class="align-self-start mb-4 mb-xl-0" width="119px" height="119px" alt="Post Thumb">
+                    <div class="card-body py-0 d-flex justify-content-between align-items-start flex-column">
                         <h3 class="card-title h6">Estudantes obtêm prêmio com projeto sobre transporte de medicamentos</h3>
                         <p class="card-text small">A equipe de robótica do Colégio Eduardo Gomes, de São Caetano do Sul...</p>
                         <a href="#" class="btn fw-bold p-0" target="_blank"><span class="me-2 small">SAIBA MAIS</span> <img loading="lazy" src="/assets/icons/arrow_right.svg" class="img-fluid" alt="Seta Saiba mais"></a>
@@ -83,9 +81,9 @@ require $root . '/components/header.php';
                 </div>
             </div>
             <div class="col-12 col-sm-6 col-xl-5">
-                <div class="card border-0 flex-xl-row gap-3">
-                    <img loading="lazy" src="/assets/imgs/thumbs/thumb-card-4.webp" class="align-self-center mb-4 mb-xl-0" width="119px" height="119px" alt="Post Thumb">
-                    <div class="card-body py-0">
+                <div class="card border-0 flex-xl-row gap-3 h-100">
+                    <img loading="lazy" src="/assets/imgs/thumbs/thumb-card-4.webp" class="align-self-start mb-4 mb-xl-0" width="119px" height="119px" alt="Post Thumb">
+                    <div class="card-body py-0 d-flex justify-content-between align-items-start flex-column">
                         <h3 class="card-title h6">Entrevista UOL | Blog Viva Bem</h3>
                         <p class="card-text small">Toda vacina tem uma temperatura certa. Sem cuidar disso, entramos numa...</p>
                         <a href="#" class="btn fw-bold p-0" target="_blank"><span class="me-2 small">SAIBA MAIS</span> <img loading="lazy" src="/assets/icons/arrow_right.svg" class="img-fluid" alt="Seta Saiba mais"></a>

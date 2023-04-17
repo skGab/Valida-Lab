@@ -127,6 +127,33 @@ body {
       margin-bottom: 3rem;
       padding-bottom: 3rem;
     }
+
+    #search {
+      cursor: pointer;
+    }
+
+    #search input {
+      border: none;
+      outline: none;
+      padding: 0.2rem 0.5rem;
+      // border-radius: 2px;
+      font-size: 0.8rem;
+      transition: color 0.3s ease;
+    }
+
+    #search input::placeholder {
+      font-size: 0.8rem;
+    }
+
+    .valid-search-green {
+      color: #0eb0ee; /* using the --links-footer color for correct keywords */
+      transition: color 0.3s ease;
+    }
+
+    .valid-search-red {
+      color: #002a53; /* using the --bg-blackbeans color for wrong keywords */
+      transition: color 0.3s ease;
+    }
   }
 
   main {
@@ -158,20 +185,15 @@ body {
       }
     }
 
-    #intro {
-      min-height: 500px;
-    }
-
     #banner_lab {
       img {
         max-width: 1600px;
         max-height: 625px;
-        filter: drop-shadow(1px 2px 4px grey);
       }
     }
 
     #expertise {
-      button {
+      a {
         background-color: var(--bg-blackbeans);
         letter-spacing: 1.5px;
         max-width: 180px;
@@ -182,7 +204,6 @@ body {
       img {
         max-width: 1600px;
         max-height: 546px;
-        filter: drop-shadow(1px 2px 4px grey);
       }
     }
 
@@ -203,7 +224,6 @@ body {
 
         img:first-child {
           object-fit: cover;
-          box-shadow: 1px 2px 4px rgba(0, 0, 0, 0.329);
         }
 
         a > span {
@@ -280,10 +300,6 @@ body {
 
       .card {
         color: var(--title-h2);
-
-        img {
-          filter: drop-shadow(1px 2px 4px gray);
-        }
 
         h5 {
           letter-spacing: 1.5px;

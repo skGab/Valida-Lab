@@ -34,7 +34,7 @@
                         <textarea type="checkbox" class="form-control" id="mensagem" rows="3"> </textarea>
                     </div>
 
-                    <button type="submit" class="btn text-white w-100">ENVIAR</button>
+                    <button type="submit" class="btn text-white w-100" disabled>ENVIAR</button>
                 </form>
             </div>
 
