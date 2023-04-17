@@ -103,7 +103,7 @@ require $root . '/components/header.php';
 
                 <div class="row mt-5 justify-content-center">
                     <div class="col-12 col-md-6 col-lg-4">
-                        <a href="" target="_blank">
+                        <a href="https://www.youtube.com/watch?v=p5ddqBOnQ-k" target="_blank">
                             <figure class="position-relative">
                                 <img loading="lazy" src="/assets/imgs/thumbs/video_1.webp" alt="Entrevista Grupo Polar" class="img-fluid">
                                 <img loading="lazy" src="/assets/icons/play_icon.svg" class="position-absolute top-50 start-50 translate-middle" alt="Icone player">
@@ -113,7 +113,7 @@ require $root . '/components/header.php';
                     </div>
 
                     <div class="col-12 col-md-6 col-lg-4 my-5 my-md-0">
-                        <a href="" target="_blank">
+                        <a href="https://www.youtube.com/watch?v=xym2YE3jxUU" target="_blank">
                             <figure class="position-relative">
                                 <img loading="lazy" src="/assets/imgs/thumbs/video_2.webp" alt="Entrevista Grupo Polar" class="img-fluid">
                                 <img loading="lazy" src="/assets/icons/play_icon.svg" class="position-absolute top-50 start-50 translate-middle" alt="Icone player">
@@ -123,7 +123,7 @@ require $root . '/components/header.php';
                     </div>
 
                     <div class="col-12 col-md-6 col-lg-4">
-                        <a href="" target="_blank">
+                        <a href="https://www.youtube.com/watch?v=dQTb7a3DKwo" target="_blank">
                             <figure class="position-relative">
                                 <img loading="lazy" src="/assets/imgs/thumbs/video_3.webp" alt="Entrevista Grupo Polar" class="img-fluid">
                                 <img loading="lazy" src="/assets/icons/play_icon.svg" class="position-absolute top-50 start-50 translate-middle" alt="Icone player">

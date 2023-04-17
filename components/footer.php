@@ -45,6 +45,7 @@
     </div>
 </section>
 
+<!-- SCROLL-TO-TOP -->
 <button id="scroll-to-top" class="border-0 bg-transparent position-fixed bottom-0 end-0 mb-3 me-3" type="button">
     <img loading="lazy" src="/assets/icons/to_top.png" width="45px" class="img-fluid" alt="Voltar para o topo">
 </button>
@@ -74,10 +75,10 @@
                         <a href="/pages/nosso-expertise.php" class="lh-lg">Nosso Expertise</a>
                         <a href="#contato" class="mb-2 lh-lg">Contato</a>
 
-                        <a href="" class="lh-lg">
+                        <a href="https://www.instagram.com/laboratoriovalida/" class="lh-lg" target="_blank">
                             <img loading="lazy" src="/assets/icons/instagram_icon.svg" width="19px" class="me-3 img-fluid" alt="Icone Instagram"><span>@laboratoriovalida</span>
                         </a>
-                        <a href="" class="lh-lg">
+                        <a href="https://www.linkedin.com/company/laboratoriovalida/" class="lh-lg" target="_blank">
                             <img loading="lazy" src="/assets/icons/linkedin_icon.svg" width="19px" class="me-3 img-fluid" alt="Icone Linkedin"><span>laboratoriovalida</span>
                         </a>
                     </nav>

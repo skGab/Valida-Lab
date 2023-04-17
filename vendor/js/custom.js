@@ -5,8 +5,11 @@ function setVisibility(element, visible) {
 
 // search-input.js
 function initSearchInput() {
+  // Obtenha a referência do elemento 'search'
   const searchLink = document.getElementById('search');
+  // Crie um elemento de entrada de texto
   const inputBox = document.createElement('input');
+  // Estilize a caixa de entrada
   inputBox.placeholder = 'busca rápida';
   inputBox.type = 'text';
   inputBox.style.position = 'absolute';
@@ -16,12 +19,15 @@ function initSearchInput() {
   inputBox.style.opacity = '0';
   inputBox.style.overflow = 'hidden';
   inputBox.style.transition = 'width 0.3s ease, opacity 0.3s ease';
+  // Anexe a caixa de entrada ao link de pesquisa
   searchLink.appendChild(inputBox);
 
+  // Evite que o evento de clique na caixa de entrada se propague ao link de pesquisa
   inputBox.addEventListener('click', (event) => {
     event.stopPropagation();
   });
 
+  // Adicione um ouvinte de eventos de clique ao link de pesquisa para alternar a caixa de entrada
   searchLink.addEventListener('click', (event) => {
     event.preventDefault();
     inputBox.style.width = inputBox.style.width === '0px' ? '190px' : '0px';
@@ -30,6 +36,7 @@ function initSearchInput() {
     inputBox.focus();
   });
 
+  // Defina os dados das páginas e suas palavras-chave
   const pagesData = [
     { title: 'Home', url: '/', keywords: ['home', 'inicio'] },
     {
@@ -64,6 +71,7 @@ function initSearchInput() {
     },
   ];
 
+  // Função para remover acentos de uma string
   const removeAccents = (str) => {
     const accents = 'ÀÁÂÃÄÅàáâãäåÒÓÔÕÖØòóôõöøÈÉÊËèéêëÇçìíîïÌÍÎÏÙÚÛÜùúûüÿÑñ';
     const accentsOut = 'AAAAAAaaaaaaOOOOOOooooooEEEEeeeeCciiiiIIIIUUUUuuuuyNn';
@@ -73,6 +81,7 @@ function initSearchInput() {
       .join('');
   };
 
+  // Função para filtrar páginas com base na consulta de pesquisa
   const filterPages = (searchQuery) => {
     searchQuery = removeAccents(searchQuery.toLowerCase());
     return pagesData.filter((page) => {
@@ -85,6 +94,7 @@ function initSearchInput() {
     });
   };
 
+  // Função debounce para limitar a frequência com que uma função é chamada
   function debounce(func, wait) {
     let timeout;
     return function (...args) {
@@ -94,6 +104,7 @@ function initSearchInput() {
     };
   }
 
+  // Função para exibir os resultados da pesquisa
   function displaySearchResults(searchResults) {
     if (searchResults.length > 0) {
       inputBox.classList.remove('valid-search-red');
@@ -106,6 +117,7 @@ function initSearchInput() {
     }
   }
 
+  // Debounced função para exibir os resultados da pesquisa
   const debouncedDisplaySearchResults = debounce(function () {
     const searchQuery = inputBox.value.trim();
     if (searchQuery.length > 0) {
@@ -114,8 +126,10 @@ function initSearchInput() {
     }
   }, 500);
 
+  // Adicione um ouvinte de eventos de entrada à caixa de entrada para exibir os resultados da pesquisa
   inputBox.addEventListener('input', debouncedDisplaySearchResults);
 
+  // Adicione um ouvinte de eventos de keydown à caixa de entrada para lidar com a tecla Enter
   inputBox.addEventListener('keydown', function (event) {
     if (event.key === 'Enter') {
       event.preventDefault();
@@ -133,12 +147,16 @@ function initSearchInput() {
 
 // VOLTAR PARA CIMA
 function initToTopButton() {
+  // Obtenha a referência do botão 'scroll-to-top' e do cabeçalho
   const button = document.getElementById('scroll-to-top');
   const header = document.getElementById('header');
 
+  // Inicialmente, torne o botão invisível
   setVisibility(button, false);
 
+  // Adicione um ouvinte de evento de rolagem à janela
   window.addEventListener('scroll', () => {
+    // Atualize a visibilidade do botão com base na posição do cabeçalho ou na rolagem da página
     setVisibility(
       button,
       header.getBoundingClientRect().top < 0 ||
@@ -146,7 +164,9 @@ function initToTopButton() {
     );
   });
 
+  // Adicione um ouvinte de evento de clique ao botão
   button.addEventListener('click', () => {
+    // Role a janela para o topo com um comportamento suave
     window.scrollTo({ top: 0, behavior: 'smooth' });
   });
 }
